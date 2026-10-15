@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17251d">
+<title>VIRASAT | A Taste of Tradition</title>
+<style>
+:root{--green:#17251d;--green2:#263b2e;--gold:#d8b46a;--cream:#fff8e9;--muted:#d9d0bc}
+*{box-sizing:border-box}body{margin:0;background:var(--green);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+.hero{min-height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:38px 18px;background:radial-gradient(ellipse at center,#3a4b36 0%,#17251d 72%);border-bottom:1px solid #8f7543;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"✦";position:absolute;color:#d8b46a55;font-size:150px}.hero:before{left:3%;top:4%}.hero:after{right:3%;bottom:0}
+.eyebrow{letter-spacing:.32em;text-transform:uppercase;font:12px Arial,sans-serif;color:var(--gold)}
+h1{font-size:clamp(48px,12vw,86px);letter-spacing:.12em;margin:12px 0 4px;color:var(--gold);font-weight:normal}
+.tag{font-size:clamp(15px,3vw,21px);font-style:italic;color:#f8edcf}
+.rule{width:130px;height:1px;background:var(--gold);margin:23px auto}
+.welcome{font:12px Arial,sans-serif;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;animation:fade 2s ease-in-out infinite alternate}
+@keyframes fade{from{opacity:.55;transform:translateY(2px)}to{opacity:1;transform:translateY(-2px)}}
+main{max-width:980px;margin:auto;padding:30px 18px 60px}
+.intro{text-align:center;line-height:1.7;color:var(--muted);max-width:650px;margin:0 auto 32px;font-size:16px}
+.section-title{text-align:center;color:var(--gold);font-size:27px;font-weight:normal;letter-spacing:.08em;margin:36px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{border:1px solid #8b7546;border-radius:12px;padding:18px;background:linear-gradient(145deg,#24362a,#19271f)}
+.item{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed #ffffff26;font:15px Arial,sans-serif}
+.item:last-child{border-bottom:0}.price{color:var(--gold);white-space:nowrap;font-weight:bold}
+.note{text-align:center;font:12px Arial,sans-serif;color:var(--muted);margin-top:28px}
+footer{text-align:center;border-top:1px solid #8b7546;padding:26px 15px;color:var(--gold);letter-spacing:.1em;font:12px Arial,sans-serif}
+.badge{display:inline-block;border:1px solid var(--gold);padding:8px 14px;border-radius:30px;margin-top:22px;color:var(--gold);font:11px Arial,sans-serif;letter-spacing:.16em}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="eyebrow">Welcome to</div>
+  <h1>VIRASAT</h1>
+  <div class="tag">A Taste of Tradition</div>
+  <div class="rule"></div>
+  <div class="welcome">Namaste · Your table, our tradition</div>
+  <div class="badge">FRESHLY PREPARED · SERVED WITH LOVE</div>
+</header>
+<main>
+  <p class="intro">Step into the warmth of Indian hospitality. Discover familiar flavours, comforting classics and a little taste of home. We’re delighted to have you with us.</p>
+  <h2 class="section-title">From Our Kitchen</h2>
+  <div class="grid">
+    <section class="card"><h3 class="section-title">Roti & Naan</h3>
+      <div class="item"><span>Plain Roti</span><span class="price">₹6</span></div>
+      <div class="item"><span>Butter Roti</span><span class="price">₹8</span></div>
+      <div class="item"><span>Tawa Roti</span><span class="price">₹10</span></div>
+      <div class="item"><span>Missi Roti</span><span class="price">₹12</span></div>
+      <div class="item"><span>Plain Naan</span><span class="price">₹40</span></div>
+      <div class="item"><span>Butter Naan</span><span class="price">₹50</span></div>
+      <div class="item"><span>Garlic Naan</span><span class="price">₹80</span></div>
+    </section>
+    <section class="card"><h3 class="section-title">Parathas</h3>
+      <div class="item"><span>Laccha Paratha</span><span class="price">₹40</span></div>
+      <div class="item"><span>Butter Laccha Paratha</span><span class="price">₹45</span></div>
+      <div class="item"><span>Stuffed Paratha</span><span class="price">₹50</span></div>
+      <div class="item"><span>Gobhi Paratha</span><span class="price">₹60</span></div>
+      <div class="item"><span>Paneer Paratha</span><span class="price">₹80</span></div>
+    </section>
+    <section class="card"><h3 class="section-title">Rice & Biryani</h3>
+      <div class="item"><span>Jeera Rice</span><span class="price">₹180</span></div>
+      <div class="item"><span>Veg Biryani</span><span class="price">₹180</span></div>
+      <div class="item"><span>Fried Rice</span><span class="price">₹200</span></div>
+      <div class="item"><span>Mutter Pulao</span><span class="price">₹100</span></div>
+      <div class="item"><span>Paneer Pulao</span><span class="price">₹120</span></div>
+      <div class="item"><span>Plain Rice</span><span class="price">₹90</span></div>
+    </section>
+    <section class="card"><h3 class="section-title">Raita & Curd</h3>
+      <div class="item"><span>Mixed Veg Raita</span><span class="price">₹90</span></div>
+      <div class="item"><span>Pineapple Raita</span><span class="price">₹80</span></div>
+      <div class="item"><span>Boondi Raita</span><span class="price">₹100</span></div>
+      <div class="item"><span>Plain Curd</span><span class="price">₹30</span></div>
+    </section>
+    <section class="card"><h3 class="section-title">Sweet Endings</h3>
+      <div class="item"><span>Butterscotch Cone</span><span class="price">₹36</span></div>
+      <div class="item"><span>Butterscotch Cup</span><span class="price">₹30</span></div>
+      <div class="item"><span>Vanilla Cup</span><span class="price">₹18</span></div>
+      <div class="item"><span>Badam Kheer</span><span class="price">₹50</span></div>
+      <div class="item"><span>Sweet Samaiyana</span><span class="price">₹28</span></div>
+    </section>
+  </div>
+  <p class="note">Please confirm item prices and serving portions with the hotel before publishing. Menu prices were transcribed from the supplied photo and a few entries may need verification.</p>
+</main>
+<footer>VIRASAT &nbsp;·&nbsp; A TASTE OF TRADITION<br><br>Thank you for dining with us. Phir milenge!</footer>
+</body></html>
